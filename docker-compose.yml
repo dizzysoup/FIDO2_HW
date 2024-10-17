@@ -1,0 +1,19 @@
+services:  
+  fido2-db:
+    container_name: fido2-db_demo
+    image:  mysql:latest
+    ports : 
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: fidodb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - "fido2_db_data:/var/lib/mysql"
+      - "./backup:/backup"
+      - "./fido2_db/01_create_users.sql:/docker-entrypoint-initdb.d/01_create_users.sql"
+      - "./fido2_db/02_create_credentials.sql:/docker-entrypoint-initdb.d/02_create_credentials.sql"
+
+volumes:
+  fido2_db_data:
