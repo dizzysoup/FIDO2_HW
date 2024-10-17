@@ -16,6 +16,11 @@
 
     ![alt text](image.png)
 
+    | 完成清單      |
+    | ------------ |
+    | ✔️ 智仁大佬  |
+    | ✔️ 宇鈞大哥  |
+
 2. 撰寫一個可以接收 FIDO Key 註冊 的伺服器端(語言不限)
 
     上一篇文章所提到publicKeyCredentialCreationOptions 變數，將改由後端發出
@@ -28,6 +33,11 @@
 
     註冊完成：POST http://localhost:<自己定義的port>/webauth/register/complete 
     註冊完成後，將產生的結果拋回後端
+
+    | 完成清單      |
+    | ------------ |
+    | ✔️ 智仁大佬  |
+    | ✔️ 宇鈞大哥  | 
 
     ### 相關參考連結：
 
