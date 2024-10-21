@@ -107,7 +107,7 @@
 傳送給前端
 可能會開的API : 
 
-http://localhost:<自己定義的port>/webauth/login/register
+http://localhost:<自己定義的port>/webauth/login/begin
 
 前端拿著此東西進行FIDO Key 登入，再把資料傳回給後端
 
